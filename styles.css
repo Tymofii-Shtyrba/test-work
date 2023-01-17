@@ -1,0 +1,33 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        transform: translateX(13px);
+    }
+}
+
+.container {
+
+}
+
+.list {
+    max-width: 300px;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+    border: solid 1px brown;
+    border-radius: 4px;
+}
+
+.list_item {
+    transform: translateX(-50px);
+    animation-name: scroll;
+    animation-duration: 2000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
