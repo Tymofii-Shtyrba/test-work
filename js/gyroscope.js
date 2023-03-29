@@ -1,11 +1,12 @@
 const axises = document.querySelectorAll('span');
 
-let gyroscope = new Gyroscope({frequency: 10});
+let gyroscope = new Gyroscope({frequency: 100});
 
 gyroscope.addEventListener('reading', e => {
-  axises[0].textContent = `Axis X: ${gyroscope.x}`;
-  axises[1].textContent = `Axis Y: ${gyroscope.y}`;
-  axises[2].textContent = `Axis Z: ${gyroscope.z}`;
+  axises[0].textContent = `Axis X: ${(gyroscope.x * 100).toFixed}`;
+  axises[0].textContent = `Axis Y: ${(gyroscope.y * 100).toFixed}`;
+  axises[0].textContent = `Axis Z: ${(gyroscope.z * 100).toFixed}`;
+
 
 });
 gyroscope.start();
