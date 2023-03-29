@@ -1,0 +1,12 @@
+.gyroscope-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.gyroscope-wrapper span {
+  font-size: 40px;
+}
